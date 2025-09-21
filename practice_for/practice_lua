@@ -1,0 +1,12 @@
+local PinkCoin = script.Parent.Parent.PinkCoin
+local BlueCoin = script.Parent.Parent.BlueCoin
+local RedCoin = script.Parent.Parent.RedCoin
+local Tree_Trunk = script.Parent
+
+local function onTouch()
+	PinkCoin.Anchored = false
+	BlueCoin.Anchored = false
+	RedCoin.Anchored = false
+end
+
+Tree_Trunk.Touched:Connect(onTouch)
